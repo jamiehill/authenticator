@@ -1,6 +1,6 @@
-[submodule "auth-module"]
+[submodule "module"]
 	path = module
 	url = git@github.com:jamiehill/authenticator/module.git
-[submodule "auth-module-sample"]
+[submodule "sample"]
 	path = sample
 	url = git@github.com:jamiehill/authenticator/sample.git
