@@ -21,10 +21,10 @@ object ApplicationBuild extends Build {
   )
 
   val main = play.Project(appName, appVersion, appDependencies).settings(
-    organization := "uk.co.amelco",
-    publishTo := Some("artifactory" at "http://amserv02:8081/artifactory/private-internal-repository"),
+    organization := "uk.co.amelco"
+//    publishTo := Some("artifactory" at "http://amserv02:8081/artifactory/private-internal-repository"),
 //    credentials += Credentials("artifactory", "http://amserv02:8081/artifactory/private-internal-repository", "amelco", "M@yTh3FBWU!")
-    credentials += Credentials("artifactory", "http://amserv02:8081/artifactory/private-internal-repository", "", "")
+//    credentials += Credentials("artifactory", "http://amserv02:8081/artifactory/private-internal-repository", "", "")
   )
 
 }

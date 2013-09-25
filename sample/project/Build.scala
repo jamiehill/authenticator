@@ -11,9 +11,9 @@ object ApplicationBuild extends Build {
     // Add your project dependencies here,
     javaCore,
     javaJdbc,
-    javaEbean,
+    javaEbean
 
-    "uk.co.amelco" %% "authenticator-module" % "1.0-SNAPSHOT"
+    //"uk.co.amelco" %% "authenticator-module" % "1.0-SNAPSHOT"
   )
 
   val main = play.Project(appName, appVersion, appDependencies).settings(
