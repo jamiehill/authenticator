@@ -1,0 +1,18 @@
+@(loginForm: Form[Authenticate.Login])
+
+@styles = {
+    <link rel="stylesheet" media="screen" href="@routes.Assets.at("stylesheets/login.css")">
+}
+
+@index(null, null, styles) {
+
+    <div class="container-fluid">
+        <form class="form-signin" action="@routes.Authenticate.login().url" method="@routes.Authenticate.login().method">
+            <h2 class="form-signin-heading">@Messages("auth.login")</h2>
+            <input type="text" class="form-control" placeholder="@Messages("auth.username")" autofocus name="username">
+            <input type="password" class="form-control" placeholder="@Messages("auth.password")" name="password">
+            <input type="submit" class="btn btn-lg btn-primary btn-block" value="@Messages("auth.submit")"/>
+        </form>
+    </div>
+
+}

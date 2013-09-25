@@ -1,0 +1,15 @@
+@(user: User)
+
+@styles = {
+    <link rel="stylesheet" media="screen" href="@routes.Assets.at("stylesheets/dashboard.css")">
+}
+
+@index(user, null, styles) {
+
+    <div class="container-fluid">
+        <div class="div-signedin">
+            <div class="div-signedin-heading">Hello <b>@user.displayName</b>, you're Secure!</div>
+        </div>
+    </div>
+
+}

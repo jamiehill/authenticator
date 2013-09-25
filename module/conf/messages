@@ -1,0 +1,12 @@
+# Authentication messages
+auth.title=Ats Authentication
+auth.username=Username
+auth.password=Password
+auth.submit=Submit
+auth.login=Log in
+auth.logout=Logout
+
+# Authentication errors
+error.invalid.credentials=Invalid user or password
+error.missing.credentials=Username and password required
+error.logged.out=You've been logged out
